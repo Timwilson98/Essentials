@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: tw-Room-1-15-26.ma
-//Last modified: Fri, Jan 16, 2026 10:01:18 AM
+//Last modified: Fri, Jan 16, 2026 10:11:54 AM
 //Codeset: 1252
 requires maya "2026";
 requires -nodeType "materialxStack" -nodeType "MaterialXSurfaceShader" -dataType "MxDocumentStackData"
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "9F49E179-44F3-FDF0-FF6E-E0BF44DC223F";
+fileInfo "UUID" "9EEB0F53-4876-79F9-8C96-EB94E9D72D2F";
 createNode transform -s -n "persp";
 	rename -uid "C542D65D-4022-C651-DB9A-E2814B21E313";
 	setAttr ".v" no;
@@ -9804,7 +9804,7 @@ createNode transform -n "pasted__pasted__pasted__pasted__spike" -p "|spike_10|pa
 	setAttr ".s" -type "double3" 0.37544122724899998 0.70037905172069803 0.37544122724899998 ;
 createNode transform -n "chair_ful";
 	rename -uid "CE69B346-4775-1E19-8EC5-06A69D3620C3";
-	setAttr ".t" -type "double3" -3.6877175697713089 -10.76636367927382 -2.5415978214863775 ;
+	setAttr ".t" -type "double3" -3.6877175697713089 -10.830148883425101 -2.5415978214863775 ;
 	setAttr ".r" -type "double3" 0 -33.077802095071988 0 ;
 	setAttr ".s" -type "double3" 2.3819538911563898 2.3819538911563898 2.3819538911563898 ;
 	setAttr ".rp" -type "double3" -0.43154845865024105 13.252067304875281 -0.2704930237681108 ;
@@ -21705,7 +21705,7 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|pasted__group|pasted
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -21779,8 +21779,8 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|pasted__group|pasted
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "group" -p "floor";
 	rename -uid "EB7377F4-4993-1965-537B-449251A14C09";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -21821,7 +21821,7 @@ createNode mesh -n "pasted__pCubeShape4" -p "|floor|group|pasted__pCube4";
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -21895,8 +21895,8 @@ createNode mesh -n "pasted__pCubeShape4" -p "|floor|group|pasted__pCube4";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pCube4" -p "|floor|group";
 	rename -uid "42670C26-4BB4-D2C8-87AC-D68D91E44B69";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -21932,7 +21932,7 @@ createNode mesh -n "pCubeShape4" -p "pCube4";
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -22006,8 +22006,8 @@ createNode mesh -n "pCubeShape4" -p "pCube4";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "group9" -p "floor";
 	rename -uid "A3ECC429-4EC1-0FFC-CF33-4BA9741157D3";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -22062,7 +22062,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group9|paste
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -22136,8 +22136,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group9|paste
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "group12" -p "floor";
 	rename -uid "D2C3EC8D-4B58-8230-A068-C899489BB1A4";
 	setAttr ".t" -type "double3" 2.7904101266812704 0 2.8437096371336188 ;
@@ -22192,7 +22192,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group12|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -22266,8 +22266,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group12|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group" -p "|floor|group12|pasted__group8";
 	rename -uid "56F3B170-4586-9B34-85B7-08BA993316AE";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -22309,7 +22309,7 @@ createNode mesh -n "pasted__pCubeShape4" -p "|floor|group12|pasted__group8|paste
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -22383,8 +22383,8 @@ createNode mesh -n "pasted__pCubeShape4" -p "|floor|group12|pasted__group8|paste
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group9" -p "|floor|group12|pasted__group8";
 	rename -uid "49B5BC25-4161-0BEA-6343-65BB90E2CE2E";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -22464,7 +22464,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -22538,8 +22538,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group" -p "|floor|group10|pasted__group|pasted__pasted__group8";
 	rename -uid "33FC66A2-4C00-5611-23AC-B8B096465B88";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -22581,7 +22581,7 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group10|pasted__grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -22655,8 +22655,8 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group10|pasted__grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group9" -p "|floor|group10|pasted__group|pasted__pasted__group8";
 	rename -uid "8D24BCB5-4FAC-A5D6-30EF-A8ABB3F266CA";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -22741,7 +22741,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -22815,8 +22815,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group" -p "|floor|group11|pasted__group10|pasted__pasted__group|pasted__pasted__pasted__group8";
 	rename -uid "AF24445E-43FA-F2EC-C39E-36AA80F491C9";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -22858,7 +22858,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -22932,8 +22932,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pCube4" -p "|floor|group11|pasted__group10|pasted__pasted__group|pasted__pasted__pasted__group8|pasted__pasted__pasted__group";
 	rename -uid "4DDFFEBA-4C57-3AA0-1988-43A7266FE1BD";
 	setAttr ".t" -type "double3" 1.9127301131956302 6.7435267553287339 0.91319252017723695 ;
@@ -22969,7 +22969,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group11|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -23043,8 +23043,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group11|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group9" -p "|floor|group11|pasted__group10|pasted__pasted__group|pasted__pasted__pasted__group8";
 	rename -uid "8EEFF75C-4AB6-2464-2BFF-2581BD8AECF9";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -23101,7 +23101,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -23175,8 +23175,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "group14" -p "floor";
 	rename -uid "98D7A782-4307-7050-9377-07A40AC0CED7";
 	setAttr ".t" -type "double3" 2.7904101266812735 0 0.87712300896512085 ;
@@ -23245,7 +23245,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -23319,8 +23319,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "group13" -p "floor";
 	rename -uid "4BE86947-4863-E236-BC1C-3AB131D6CF61";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8074384364062643 ;
@@ -23394,7 +23394,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -23468,8 +23468,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "group18" -p "floor";
 	rename -uid "7E0A99B7-4793-6105-3543-F89B67DFB78D";
 	setAttr ".t" -type "double3" 2.7904101266812873 0 -8.6571134146769513 ;
@@ -23524,7 +23524,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group18|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -23598,8 +23598,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group18|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group" -p "|floor|group18|pasted__group8";
 	rename -uid "B99D99C1-48BC-A7D1-4460-77ABABAD9EC2";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -23640,7 +23640,7 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group18|pasted__grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -23714,8 +23714,8 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group18|pasted__grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pCube4" -p "|floor|group18|pasted__group8|pasted__group";
 	rename -uid "66A30A74-43A9-77A8-D08B-A0A22E3BB7DA";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -23751,7 +23751,7 @@ createNode mesh -n "pasted__pCubeShape4" -p "|floor|group18|pasted__group8|paste
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -23825,8 +23825,8 @@ createNode mesh -n "pasted__pCubeShape4" -p "|floor|group18|pasted__group8|paste
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group9" -p "|floor|group18|pasted__group8";
 	rename -uid "65565352-4582-A91F-C5D5-058F9FEC7C8D";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -23881,7 +23881,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -23955,8 +23955,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group12" -p "|floor|group18|pasted__group8";
 	rename -uid "C2D5D68E-48C8-6AD7-5BCE-F3AC6A8E9C45";
 	setAttr ".t" -type "double3" 2.7904101266812704 0 2.8437096371336188 ;
@@ -24011,7 +24011,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -24085,8 +24085,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group" -p "|floor|group18|pasted__group8|pasted__group12|pasted__pasted__group8";
 	rename -uid "53B91CD4-41D0-AA53-38FC-889BFE9C9984";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -24127,7 +24127,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group18|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -24201,8 +24201,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group18|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pCube4" -p "|floor|group18|pasted__group8|pasted__group12|pasted__pasted__group8|pasted__pasted__group";
 	rename -uid "D8CCACDE-4870-B24F-23BF-038086147E62";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -24238,7 +24238,7 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group18|pasted__grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -24312,8 +24312,8 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group18|pasted__grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group9" -p "|floor|group18|pasted__group8|pasted__group12|pasted__pasted__group8";
 	rename -uid "0D06E925-4A96-0AB0-3BEC-9E8397FD2099";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -24368,7 +24368,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -24442,8 +24442,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group10" -p "|floor|group18|pasted__group8";
 	rename -uid "8321BC9B-4321-B9E3-6B67-F4ACA05A3678";
 	setAttr ".t" -type "double3" -1.0079126279331523 0 -0.98622362656292639 ;
@@ -24503,7 +24503,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -24577,8 +24577,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group" -p "|floor|group18|pasted__group8|pasted__group10|pasted__pasted__group|pasted__pasted__pasted__group8";
 	rename -uid "FEBD316A-4E12-2FFE-AC8D-26AE93F882E4";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -24619,7 +24619,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -24693,8 +24693,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pCube4" -p "|floor|group18|pasted__group8|pasted__group10|pasted__pasted__group|pasted__pasted__pasted__group8|pasted__pasted__pasted__group";
 	rename -uid "30FB8B6E-49A6-4A01-CF78-9CB9FAB9AFE8";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -24730,7 +24730,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group18|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -24804,8 +24804,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group18|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group9" -p "|floor|group18|pasted__group8|pasted__group10|pasted__pasted__group|pasted__pasted__pasted__group8";
 	rename -uid "3F8E3488-4CE8-473A-10B2-E7B542F823DB";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -24862,7 +24862,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -24936,8 +24936,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group11" -p "|floor|group18|pasted__group8";
 	rename -uid "FDEEF416-439E-46E5-698C-FABD9B6B7D65";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8112138435583578 ;
@@ -25004,7 +25004,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -25078,8 +25078,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group" -p "|floor|group18|pasted__group8|pasted__group11|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "99740A66-41E3-D91B-F8AF-DAADCC53528A";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -25120,7 +25120,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -25194,8 +25194,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pCube4" -p "|floor|group18|pasted__group8|pasted__group11|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__group";
 	rename -uid "06107F61-4D64-D50F-616C-E3A2B7A4B845";
 	setAttr ".t" -type "double3" 1.9127301131956302 6.7435267553287339 0.91319252017723695 ;
@@ -25231,7 +25231,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -25305,8 +25305,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group9" -p "|floor|group18|pasted__group8|pasted__group11|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "497E037F-4886-74F2-71EB-4583837FDCB1";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -25364,7 +25364,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -25438,8 +25438,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group14" -p "|floor|group18|pasted__group8";
 	rename -uid "F41E3383-4278-A3B2-F26A-F09925117EB2";
 	setAttr ".t" -type "double3" 2.7904101266812735 0 0.87712300896512085 ;
@@ -25508,7 +25508,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -25582,8 +25582,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group13" -p "|floor|group18|pasted__group8";
 	rename -uid "F25EC7A5-4CFB-726B-7A97-EDB812A64793";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8074384364062643 ;
@@ -25659,7 +25659,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -25733,8 +25733,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "group15" -p "floor";
 	rename -uid "1BC3A589-48BA-BE81-4AD4-78B5C727635C";
 	setAttr ".t" -type "double3" 6.6055943144405695 0 -0.98622362656291529 ;
@@ -25817,7 +25817,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -25891,8 +25891,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "group16" -p "floor";
 	rename -uid "4BF83845-4A63-D5E8-7901-E3A29AF317E8";
 	setAttr ".t" -type "double3" 6.5889847830805728 0 -0.98622362656291529 ;
@@ -25982,7 +25982,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -26056,8 +26056,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "group17" -p "floor";
 	rename -uid "6E5771F4-4FC9-1689-EEA0-AD87876067DD";
 	setAttr ".t" -type "double3" 6.5818902378640702 0 -0.98622362656291529 ;
@@ -26147,7 +26147,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -26221,8 +26221,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "group21" -p "floor";
 	rename -uid "2EACA483-45BA-76E2-B2AF-9DA9338717EE";
 	setAttr ".t" -type "double3" -4.811308920715156 0 -0.98622362656293194 ;
@@ -26277,7 +26277,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group21|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -26351,8 +26351,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group21|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group" -p "|floor|group21|pasted__group8";
 	rename -uid "A124F34C-4981-F001-17AB-6AB5C016FE4E";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -26393,7 +26393,7 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group21|pasted__grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -26467,8 +26467,8 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group21|pasted__grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pCube4" -p "|floor|group21|pasted__group8|pasted__group";
 	rename -uid "09F6C23C-4EE8-A08D-4409-FAB49E786A4F";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -26504,7 +26504,7 @@ createNode mesh -n "pasted__pCubeShape4" -p "|floor|group21|pasted__group8|paste
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -26578,8 +26578,8 @@ createNode mesh -n "pasted__pCubeShape4" -p "|floor|group21|pasted__group8|paste
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group9" -p "|floor|group21|pasted__group8";
 	rename -uid "F3F759D4-4241-C5C5-87DC-91B0098D133E";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -26634,7 +26634,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -26708,8 +26708,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group12" -p "|floor|group21|pasted__group8";
 	rename -uid "0E749B88-45DF-0861-270B-69B79D871974";
 	setAttr ".t" -type "double3" 2.7904101266812704 0 2.8437096371336188 ;
@@ -26764,7 +26764,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -26838,8 +26838,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group" -p "|floor|group21|pasted__group8|pasted__group12|pasted__pasted__group8";
 	rename -uid "9878DB0C-4B7A-7A2B-079A-39A6549A29E1";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -26881,7 +26881,7 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group21|pasted__grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -26955,8 +26955,8 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group21|pasted__grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group9" -p "|floor|group21|pasted__group8|pasted__group12|pasted__pasted__group8";
 	rename -uid "13FC1835-4B29-2B0E-C9C6-AE96D149DB47";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -27043,7 +27043,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group21|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -27117,8 +27117,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group21|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group9" -p "|floor|group21|pasted__group8|pasted__group10|pasted__pasted__group|pasted__pasted__pasted__group8";
 	rename -uid "2FBB9B3A-4F1F-41CD-27D8-CE88664B11CB";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -27209,7 +27209,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -27283,8 +27283,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pCube4" -p "|floor|group21|pasted__group8|pasted__group11|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__group";
 	rename -uid "FE836D71-4C1F-BFA7-CFE7-438829B6F824";
 	setAttr ".t" -type "double3" 1.9127301131956302 6.7435267553287339 0.91319252017723695 ;
@@ -27320,7 +27320,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -27394,8 +27394,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group9" -p "|floor|group21|pasted__group8|pasted__group11|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "6C861464-4B92-5891-AEC4-59A6F7630755";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -27485,7 +27485,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -27559,8 +27559,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group13" -p "|floor|group21|pasted__group8";
 	rename -uid "4F1ED201-4501-0354-BE70-E19B9A823B71";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8074384364062643 ;
@@ -27636,7 +27636,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -27710,8 +27710,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group18" -p "|floor|group21|pasted__group8";
 	rename -uid "4C47B659-416A-3C35-6ECA-8DB661402CEA";
 	setAttr ".t" -type "double3" 2.7904101266812873 0 -8.6571134146769513 ;
@@ -27766,7 +27766,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -27840,8 +27840,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group" -p "|floor|group21|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "BB4E7938-4E4D-0836-C39C-16B49EEE2288";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -27882,7 +27882,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group21|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -27956,8 +27956,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group21|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pCube4" -p "|floor|group21|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group";
 	rename -uid "D0BF0FB9-46D6-0874-F14E-A9AB4FBC5E7D";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -27993,7 +27993,7 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group21|pasted__grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -28067,8 +28067,8 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group21|pasted__grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group9" -p "|floor|group21|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "257DF33F-47F9-8DEF-F3FA-12BEC1AA702B";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -28123,7 +28123,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -28197,8 +28197,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group12" -p "|floor|group21|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "594358FA-4903-1A61-7DB6-2DBABB033BC2";
 	setAttr ".t" -type "double3" 2.7904101266812704 0 2.8437096371336188 ;
@@ -28253,7 +28253,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -28327,8 +28327,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group" -p "|floor|group21|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group12|pasted__pasted__pasted__group8";
 	rename -uid "8EAB1BF0-4331-0E27-E6C7-3A9EE2FB8EC9";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -28369,7 +28369,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -28443,8 +28443,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pCube4" -p "|floor|group21|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group12|pasted__pasted__pasted__group8|pasted__pasted__pasted__group";
 	rename -uid "23D7CCD7-4FE9-8DBC-997B-51BA2632D679";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -28480,7 +28480,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group21|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -28554,8 +28554,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group21|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group9" -p "|floor|group21|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group12|pasted__pasted__pasted__group8";
 	rename -uid "1EB75660-4A8B-80C5-8D0E-9DB461C29F46";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -28612,7 +28612,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -28686,8 +28686,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group10" -p "|floor|group21|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "461BF77C-4DC6-3BB9-262C-18893F53B2FF";
 	setAttr ".t" -type "double3" -1.0079126279331523 0 -0.98622362656292639 ;
@@ -28753,7 +28753,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -28827,8 +28827,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pCube4" -p "|floor|group21|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__group";
 	rename -uid "D543409A-4C0E-5359-48B3-55929F35E1A7";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -28864,7 +28864,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -28938,8 +28938,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group9" -p "|floor|group21|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "A6F1EC4A-4F27-9E28-223F-A99253428FC4";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -29034,7 +29034,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -29108,8 +29108,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pCube4" -p "|floor|group21|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group11|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__pasted__group";
 	rename -uid "8371BDB6-4D13-5383-9692-0D9F11CAF8E1";
 	setAttr ".t" -type "double3" 1.9127301131956302 6.7435267553287339 0.91319252017723695 ;
@@ -29145,7 +29145,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -29219,8 +29219,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group9" -p "|floor|group21|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group11|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "10B9355B-47DC-166D-2B8A-D2905E81623F";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -29313,7 +29313,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -29387,8 +29387,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group13" -p "|floor|group21|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "5CA161EC-436C-C170-348A-A096724170D5";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8074384364062643 ;
@@ -29465,7 +29465,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -29539,8 +29539,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group15" -p "|floor|group21|pasted__group8";
 	rename -uid "67FFB6C1-484B-079A-E0B5-E3AA0CEC632B";
 	setAttr ".t" -type "double3" 6.6055943144405695 0 -0.98622362656291529 ;
@@ -29625,7 +29625,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -29699,8 +29699,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group16" -p "|floor|group21|pasted__group8";
 	rename -uid "22F4D1DF-4374-C9FC-309D-7080DB60BF1C";
 	setAttr ".t" -type "double3" 6.5889847830805728 0 -0.98622362656291529 ;
@@ -29791,7 +29791,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -29865,8 +29865,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group17" -p "|floor|group21|pasted__group8";
 	rename -uid "167B8614-4159-D489-A009-C19CAF2923F6";
 	setAttr ".t" -type "double3" 6.5818902378640702 0 -0.98622362656291529 ;
@@ -29957,7 +29957,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -30031,8 +30031,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "group19" -p "floor";
 	rename -uid "5E056B36-4E49-E6AF-059A-16B61DDA4B58";
 	setAttr ".t" -type "double3" 10.393172705441453 0 -0.98622362656290974 ;
@@ -30087,7 +30087,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group19|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -30161,8 +30161,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group19|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group" -p "|floor|group19|pasted__group8";
 	rename -uid "BA54ACE3-4D77-E113-AC66-6695B5A1E32E";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -30203,7 +30203,7 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group19|pasted__grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -30277,8 +30277,8 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group19|pasted__grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pCube4" -p "|floor|group19|pasted__group8|pasted__group";
 	rename -uid "C2558F6B-459F-A191-B099-36BA210D30D0";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -30314,7 +30314,7 @@ createNode mesh -n "pasted__pCubeShape4" -p "|floor|group19|pasted__group8|paste
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -30388,8 +30388,8 @@ createNode mesh -n "pasted__pCubeShape4" -p "|floor|group19|pasted__group8|paste
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group9" -p "|floor|group19|pasted__group8";
 	rename -uid "4BF27A71-400F-F8A9-4075-F08668613B7B";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -30444,7 +30444,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -30518,8 +30518,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group12" -p "|floor|group19|pasted__group8";
 	rename -uid "50738F43-47C6-F660-FC40-3CA04E293DBD";
 	setAttr ".t" -type "double3" 2.7904101266812704 0 2.8437096371336188 ;
@@ -30574,7 +30574,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -30648,8 +30648,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group" -p "|floor|group19|pasted__group8|pasted__group12|pasted__pasted__group8";
 	rename -uid "BC2D908E-41DB-05BA-AD79-E38DF5BD8166";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -30691,7 +30691,7 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group19|pasted__grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -30765,8 +30765,8 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group19|pasted__grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group9" -p "|floor|group19|pasted__group8|pasted__group12|pasted__pasted__group8";
 	rename -uid "20BF8A17-4A84-109C-56E2-A5B9488B1EC6";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -30846,7 +30846,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -30920,8 +30920,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group" -p "|floor|group19|pasted__group8|pasted__group10|pasted__pasted__group|pasted__pasted__pasted__group8";
 	rename -uid "8C722AC7-497E-CE63-9FED-89881758D742";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -30963,7 +30963,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group19|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -31037,8 +31037,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group19|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group9" -p "|floor|group19|pasted__group8|pasted__group10|pasted__pasted__group|pasted__pasted__pasted__group8";
 	rename -uid "0BF42584-47DB-9B41-8454-2B8371665484";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -31125,7 +31125,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -31199,8 +31199,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group" -p "|floor|group19|pasted__group8|pasted__group11|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "91A4C793-44A6-CF9D-8988-E89604C4A80D";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -31241,7 +31241,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -31315,8 +31315,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pCube4" -p "|floor|group19|pasted__group8|pasted__group11|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__group";
 	rename -uid "4FA0692D-45F3-EEAF-4922-6CA65E796241";
 	setAttr ".t" -type "double3" 1.9127301131956302 6.7435267553287339 0.91319252017723695 ;
@@ -31352,7 +31352,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -31426,8 +31426,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group9" -p "|floor|group19|pasted__group8|pasted__group11|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "C1CF8624-4DA4-B558-7B6E-B0827396FF9D";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -31485,7 +31485,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -31559,8 +31559,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group14" -p "|floor|group19|pasted__group8";
 	rename -uid "D9F115C9-40FE-EA3D-6EAA-6B8133F02F2A";
 	setAttr ".t" -type "double3" 2.7904101266812735 0 0.87712300896512085 ;
@@ -31629,7 +31629,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -31703,8 +31703,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group13" -p "|floor|group19|pasted__group8";
 	rename -uid "C9A62D53-4D25-E6C4-8E45-639DEA68C6C1";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8074384364062643 ;
@@ -31780,7 +31780,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -31854,8 +31854,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group18" -p "|floor|group19|pasted__group8";
 	rename -uid "55E798E3-4629-69B1-0AD8-E2B873EF03A2";
 	setAttr ".t" -type "double3" 2.7904101266812873 0 -8.6571134146769513 ;
@@ -31910,7 +31910,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -31984,8 +31984,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "F5ECE90E-43C7-B7EA-45F4-2E9EB8CBB4D5";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -32026,7 +32026,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group19|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -32100,8 +32100,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group19|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pCube4" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group";
 	rename -uid "6CC50E98-413A-D829-4330-3DA84EA09BED";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -32137,7 +32137,7 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group19|pasted__grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -32211,8 +32211,8 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group19|pasted__grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group9" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "91A252D4-4974-F3F9-D3BB-81AD4A838677";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -32267,7 +32267,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -32341,8 +32341,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group12" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "89E301CF-41EA-9ABD-5783-2B825D6A6732";
 	setAttr ".t" -type "double3" 2.7904101266812704 0 2.8437096371336188 ;
@@ -32397,7 +32397,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -32471,8 +32471,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group12|pasted__pasted__pasted__group8";
 	rename -uid "8A490DD5-4A96-1B9A-4C1D-F5A79BF0E141";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -32513,7 +32513,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -32587,8 +32587,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pCube4" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group12|pasted__pasted__pasted__group8|pasted__pasted__pasted__group";
 	rename -uid "79366027-476A-8E4A-7742-4598DEA4D001";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -32624,7 +32624,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group19|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -32698,8 +32698,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group19|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group9" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group12|pasted__pasted__pasted__group8";
 	rename -uid "E5DFAAAA-42F0-7DA5-775C-6F88997ED9B7";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -32756,7 +32756,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -32830,8 +32830,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group10" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "19008FC4-4B11-2844-C558-388976FF44E5";
 	setAttr ".t" -type "double3" -1.0079126279331523 0 -0.98622362656292639 ;
@@ -32893,7 +32893,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -32967,8 +32967,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "90E1EB16-445A-378B-F6A6-75AA0D6F9067";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -33009,7 +33009,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -33083,8 +33083,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pCube4" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__group";
 	rename -uid "9110CABA-4EB0-541B-F8EF-11933619C868";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -33120,7 +33120,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -33194,8 +33194,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group9" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "552B4848-425C-B4FE-DD02-2CAA367895DB";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -33253,7 +33253,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -33327,8 +33327,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group11" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "27E17BCA-44FA-7BFD-A1C5-FFBC53837837";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8112138435583578 ;
@@ -33396,7 +33396,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -33470,8 +33470,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group11|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "8B75686A-4DDF-6876-C5CE-53B4917C9579";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -33514,7 +33514,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -33588,8 +33588,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pCube4" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group11|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__pasted__group";
 	rename -uid "6A2E4DCE-4A60-9C60-D8A8-D4A087EEBA0B";
 	setAttr ".t" -type "double3" 1.9127301131956302 6.7435267553287339 0.91319252017723695 ;
@@ -33625,7 +33625,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -33699,8 +33699,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group9" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group11|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "9D4C1E37-405F-E45F-2C92-01AA0B38C496";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -33759,7 +33759,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -33833,8 +33833,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group14" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "49550332-41EE-4B5C-C863-6897A78E5F75";
 	setAttr ".t" -type "double3" 2.7904101266812735 0 0.87712300896512085 ;
@@ -33905,7 +33905,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -33979,8 +33979,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group13" -p "|floor|group19|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "6643FBCC-4659-0DE7-C17E-C499D0982EEB";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8074384364062643 ;
@@ -34057,7 +34057,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -34131,8 +34131,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group15" -p "|floor|group19|pasted__group8";
 	rename -uid "6409EABE-4FFA-4042-C2D0-0A9D5C68B006";
 	setAttr ".t" -type "double3" 6.6055943144405695 0 -0.98622362656291529 ;
@@ -34217,7 +34217,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -34291,8 +34291,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group16" -p "|floor|group19|pasted__group8";
 	rename -uid "03CA59C5-4435-11BA-5E48-64B57BF9373A";
 	setAttr ".t" -type "double3" 6.5889847830805728 0 -0.98622362656291529 ;
@@ -34383,7 +34383,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -34457,8 +34457,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group17" -p "|floor|group19|pasted__group8";
 	rename -uid "3C2666CA-45FB-B197-0DB4-3E9D9AF250A7";
 	setAttr ".t" -type "double3" 6.5818902378640702 0 -0.98622362656291529 ;
@@ -34549,7 +34549,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -34623,8 +34623,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "group20" -p "floor";
 	rename -uid "C71467E4-4375-6C23-E931-67A462378971";
 	setAttr ".t" -type "double3" 10.407451302467241 0 -0.98622362656290974 ;
@@ -34684,7 +34684,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -34758,8 +34758,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group" -p "|floor|group20|pasted__group19|pasted__pasted__group8";
 	rename -uid "53039686-4E18-10E1-B362-C89CA6BDFE7D";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -34820,7 +34820,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -34894,8 +34894,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group12" -p "|floor|group20|pasted__group19|pasted__pasted__group8";
 	rename -uid "2DC4D290-411A-D9E2-1F2A-3B86B256842E";
 	setAttr ".t" -type "double3" 2.7904101266812704 0 2.8437096371336188 ;
@@ -34950,7 +34950,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -35024,8 +35024,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group" -p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group12|pasted__pasted__pasted__group8";
 	rename -uid "40B93AF0-401D-9E63-C73A-D08103DE3B66";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -35113,7 +35113,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -35187,8 +35187,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group" -p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "ED10E65D-4367-1BEE-7638-3697FDFD17D6";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -35230,7 +35230,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -35304,8 +35304,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group9" -p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "ECE6F50C-4367-C4E1-B436-338D060143AC";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -35394,7 +35394,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -35468,8 +35468,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group" -p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group11|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "706C58BB-4F72-9321-53F6-71B2BDE9B02C";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -35512,7 +35512,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -35586,8 +35586,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pCube4" -p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group11|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__pasted__group";
 	rename -uid "95AE6265-4C5F-F2AF-CDC2-5C9A2EA65CF7";
 	setAttr ".t" -type "double3" 1.9127301131956302 6.7435267553287339 0.91319252017723695 ;
@@ -35623,7 +35623,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -35697,8 +35697,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group9" -p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group11|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "2C15E729-42C9-96DC-7B54-23A8B1137916";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -35757,7 +35757,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -35831,8 +35831,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group14" -p "|floor|group20|pasted__group19|pasted__pasted__group8";
 	rename -uid "2D0744F2-44D8-735F-5D00-9D804C3BB6DD";
 	setAttr ".t" -type "double3" 2.7904101266812735 0 0.87712300896512085 ;
@@ -35903,7 +35903,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -35977,8 +35977,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group13" -p "|floor|group20|pasted__group19|pasted__pasted__group8";
 	rename -uid "37A54AE0-44D8-0C98-6B15-2499B81C1586";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8074384364062643 ;
@@ -36055,7 +36055,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -36129,8 +36129,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group18" -p "|floor|group20|pasted__group19|pasted__pasted__group8";
 	rename -uid "2ED5F913-4895-8371-8B6A-5AA406A985F1";
 	setAttr ".t" -type "double3" 2.7904101266812873 0 -8.6571134146769513 ;
@@ -36185,7 +36185,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -36259,8 +36259,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group" -p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8";
 	rename -uid "A6D47CD3-408B-5F47-BC43-CD8DCF34CCE5";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -36323,7 +36323,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -36397,8 +36397,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group12" -p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8";
 	rename -uid "5CB55EB7-4CCE-9AE4-E8A3-E4AA11D3C6B7";
 	setAttr ".t" -type "double3" 2.7904101266812704 0 2.8437096371336188 ;
@@ -36455,7 +36455,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -36529,8 +36529,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group" -p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group12|pasted__pasted__pasted__pasted__group8";
 	rename -uid "57B993AC-4C43-46CE-6933-0894D2BBC52C";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -36594,7 +36594,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -36668,8 +36668,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group10" -p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8";
 	rename -uid "FE3505BD-416A-AF1F-8F61-71BB45479881";
 	setAttr ".t" -type "double3" -1.0079126279331523 0 -0.98622362656292639 ;
@@ -36732,7 +36732,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -36806,8 +36806,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group" -p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "142C1305-4671-EFBA-7F13-689A2D36DC87";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -36850,7 +36850,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -36924,8 +36924,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pCube4" -p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__pasted__group";
 	rename -uid "23C4CDEA-4B80-AD32-4C28-18827A892355";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -36961,7 +36961,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -37035,8 +37035,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group9" -p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "9C15C968-4EE0-0A32-6EC6-6CB139E3AC0F";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -37095,7 +37095,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -37169,8 +37169,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group11" -p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8";
 	rename -uid "6B4CDCF1-491D-3AAD-2EBA-F78E46C10522";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8112138435583578 ;
@@ -37239,7 +37239,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -37313,8 +37313,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pasted__group" -p
 		 "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group11|pasted__pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "C605AF8A-461A-6BAA-E536-A6968B41A782";
@@ -37358,7 +37358,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -37432,8 +37432,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pasted__pCube4" 
 		-p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group11|pasted__pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__pasted__pasted__group";
 	rename -uid "CE3EED83-45F3-DACD-5C5D-AA90F6F91178";
@@ -37471,7 +37471,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -37545,8 +37545,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pasted__group9" 
 		-p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group11|pasted__pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "F14AEEB7-4E0D-2E4F-90FD-68833E944CFA";
@@ -37606,7 +37606,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -37680,8 +37680,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group14" -p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8";
 	rename -uid "980A24B0-4BE3-42CE-41D5-E0A74CA33A46";
 	setAttr ".t" -type "double3" 2.7904101266812735 0 0.87712300896512085 ;
@@ -37753,7 +37753,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -37827,8 +37827,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group13" -p "|floor|group20|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8";
 	rename -uid "60D884A7-4E9C-D872-1165-60895F44F472";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8074384364062643 ;
@@ -37906,7 +37906,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -37980,8 +37980,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group15" -p "|floor|group20|pasted__group19|pasted__pasted__group8";
 	rename -uid "EEF536E8-4B9F-00FF-9B59-379A9075675E";
 	setAttr ".t" -type "double3" 6.6055943144405695 0 -0.98622362656291529 ;
@@ -38195,7 +38195,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -38269,8 +38269,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group" -p "|floor|group25|pasted__group8";
 	rename -uid "43F6285C-449A-202C-1623-2386ED7A8F95";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -38311,7 +38311,7 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group25|pasted__grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -38385,8 +38385,8 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group25|pasted__grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group";
 	rename -uid "70B2FAA5-46D2-FC53-104A-F5B81BC1B143";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -38422,7 +38422,7 @@ createNode mesh -n "pasted__pCubeShape4" -p "|floor|group25|pasted__group8|paste
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -38496,8 +38496,8 @@ createNode mesh -n "pasted__pCubeShape4" -p "|floor|group25|pasted__group8|paste
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group9" -p "|floor|group25|pasted__group8";
 	rename -uid "27D497B7-4E2C-59C1-4E17-CE815766E4D6";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -38552,7 +38552,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -38626,8 +38626,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group12" -p "|floor|group25|pasted__group8";
 	rename -uid "0D69542B-46D1-6BF2-635B-6693752821C3";
 	setAttr ".t" -type "double3" 2.7904101266812704 0 2.8437096371336188 ;
@@ -38682,7 +38682,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -38756,8 +38756,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group12|pasted__pasted__group8";
 	rename -uid "E1F22C25-4069-0BDA-2210-608E9E0AAF73";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -38798,7 +38798,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -38872,8 +38872,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group12|pasted__pasted__group8|pasted__pasted__group";
 	rename -uid "C3062FA3-457F-16BA-85F7-17AA72592410";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -38909,7 +38909,7 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group25|pasted__grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -38983,8 +38983,8 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group25|pasted__grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group12|pasted__pasted__group8";
 	rename -uid "538E47C8-46C9-F56A-B731-29B00EFC528F";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -39039,7 +39039,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -39113,8 +39113,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group10" -p "|floor|group25|pasted__group8";
 	rename -uid "66B5A3A2-4AE5-BB47-4924-DA8F33CC0BBD";
 	setAttr ".t" -type "double3" -1.0079126279331523 0 -0.98622362656292639 ;
@@ -39174,7 +39174,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -39248,8 +39248,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group10|pasted__pasted__group|pasted__pasted__pasted__group8";
 	rename -uid "535A008D-4B05-80A5-FE6E-618063A2D322";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -39290,7 +39290,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -39364,8 +39364,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group10|pasted__pasted__group|pasted__pasted__pasted__group8|pasted__pasted__pasted__group";
 	rename -uid "33018255-46EB-DAF6-6552-AFBD4818FF2C";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -39401,7 +39401,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -39475,8 +39475,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group10|pasted__pasted__group|pasted__pasted__pasted__group8";
 	rename -uid "BEE84AFB-41B5-5B9A-2F67-E4A4B8B0E341";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -39533,7 +39533,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -39607,8 +39607,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group11" -p "|floor|group25|pasted__group8";
 	rename -uid "6C64D9A2-4D88-5C04-B8EE-3297457476B5";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8112138435583578 ;
@@ -39675,7 +39675,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -39749,7 +39749,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group11|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "7504CA57-43F1-8D9C-00E7-8AB4F2843920";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -39790,7 +39791,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -39864,8 +39865,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group11|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__group";
 	rename -uid "FE76CA2E-4FB7-E273-D7A2-22A5894F1533";
 	setAttr ".t" -type "double3" 1.9127301131956302 6.7435267553287339 0.91319252017723695 ;
@@ -39901,7 +39902,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -39975,8 +39976,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group11|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "1410C77C-4460-7C0E-6528-6D879F98092D";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -40034,7 +40035,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -40108,8 +40109,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group14" -p "|floor|group25|pasted__group8";
 	rename -uid "76CDE96D-40C0-15A9-A4C3-A0AD0B518EC4";
 	setAttr ".t" -type "double3" 2.7904101266812735 0 0.87712300896512085 ;
@@ -40178,7 +40179,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -40252,8 +40253,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group13" -p "|floor|group25|pasted__group8";
 	rename -uid "7266A6E5-464C-5059-AC69-79A450F6E149";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8074384364062643 ;
@@ -40329,7 +40330,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -40403,8 +40404,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group18" -p "|floor|group25|pasted__group8";
 	rename -uid "B23BF289-412E-2C17-52FB-9D8208742836";
 	setAttr ".t" -type "double3" 2.7904101266812873 0 -8.6571134146769513 ;
@@ -40465,7 +40466,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -40539,8 +40540,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "7313F522-4F4A-21F5-BB3B-719DE93950FF";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -40595,7 +40596,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -40669,8 +40670,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group12" -p "|floor|group25|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "74B67FBA-4CB5-B85E-0C33-389EBB6CAFB8";
 	setAttr ".t" -type "double3" 2.7904101266812704 0 2.8437096371336188 ;
@@ -40725,7 +40726,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -40799,8 +40800,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group12|pasted__pasted__pasted__group8";
 	rename -uid "AE54F678-4F4E-07F1-D117-2D90D4F41610";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -40841,7 +40842,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -40915,8 +40916,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group12|pasted__pasted__pasted__group8|pasted__pasted__pasted__group";
 	rename -uid "19A193B5-49AB-4402-850A-2B98CCF09C35";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -40952,7 +40953,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -41026,8 +41027,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group12|pasted__pasted__pasted__group8";
 	rename -uid "ED3B7AF8-40B1-5860-C20B-3CAF16EA4A38";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -41109,7 +41110,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -41183,8 +41184,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "8E4FD871-4473-816C-7B97-D394D4DDE866";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -41225,7 +41226,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -41299,8 +41300,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__group";
 	rename -uid "1CDE898C-4CF2-C2F0-EA4F-7EAB18D3558B";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -41336,7 +41337,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -41410,8 +41411,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "7EFC050D-42B5-EB50-F659-5AB2F609C0D1";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -41469,7 +41470,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -41543,8 +41544,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group11" -p "|floor|group25|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "B5B31132-48A0-4D7C-4C1E-9F8ADA0D6DC0";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8112138435583578 ;
@@ -41618,7 +41619,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -41692,8 +41693,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group18|pasted__pasted__group8|pasted__pasted__group11|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "B148EACA-4C3A-DC1C-1480-48B8C983F6F4";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -41752,7 +41753,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -41826,8 +41827,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group14" -p "|floor|group25|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "13EBCABF-41C8-C0C2-21C4-E7A982A827BD";
 	setAttr ".t" -type "double3" 2.7904101266812735 0 0.87712300896512085 ;
@@ -41898,7 +41899,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -41972,8 +41973,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group13" -p "|floor|group25|pasted__group8|pasted__group18|pasted__pasted__group8";
 	rename -uid "3740327B-4C8A-871E-FB71-E3B25C0F5D00";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8074384364062643 ;
@@ -42098,7 +42099,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -42172,8 +42173,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group16" -p "|floor|group25|pasted__group8";
 	rename -uid "61ECEBCA-4A28-8258-83BC-DEB2C03510D4";
 	setAttr ".t" -type "double3" 6.5889847830805728 0 -0.98622362656291529 ;
@@ -42264,7 +42265,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -42338,8 +42339,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group17" -p "|floor|group25|pasted__group8";
 	rename -uid "42473EAD-40A8-8B45-AC73-819EAEC3CEBF";
 	setAttr ".t" -type "double3" 6.5818902378640702 0 -0.98622362656291529 ;
@@ -42430,7 +42431,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -42504,8 +42505,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group21" -p "|floor|group25|pasted__group8";
 	rename -uid "608546C5-497B-8C22-7EAA-57A5109C7799";
 	setAttr ".t" -type "double3" -4.811308920715156 0 -0.98622362656293194 ;
@@ -42560,7 +42561,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -42634,8 +42635,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8";
 	rename -uid "3679B573-4E71-ADFB-78E5-37962A860AF0";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -42676,7 +42677,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -42750,8 +42751,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group";
 	rename -uid "37CA6F13-4787-B7E3-E40D-17A3C8852FCC";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -42787,7 +42788,7 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group25|pasted__grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -42861,8 +42862,8 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group25|pasted__grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8";
 	rename -uid "DF33C065-4D95-FCF6-1011-F2B266FD12A2";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -42917,7 +42918,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -42991,8 +42992,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group12" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8";
 	rename -uid "9AC0317A-42D3-C6E3-8CE8-7B8AA2AC1085";
 	setAttr ".t" -type "double3" 2.7904101266812704 0 2.8437096371336188 ;
@@ -43047,7 +43048,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -43121,8 +43122,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group12|pasted__pasted__pasted__group8";
 	rename -uid "EC47ED89-4EA1-07B7-17AB-74B2FF879F7B";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -43163,7 +43164,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -43237,8 +43238,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group12|pasted__pasted__pasted__group8|pasted__pasted__pasted__group";
 	rename -uid "7B4557ED-4634-AA90-A2EF-50AC283366C1";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -43274,7 +43275,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -43348,8 +43349,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group12|pasted__pasted__pasted__group8";
 	rename -uid "9B19CF47-4726-0CF5-BDF4-C4A3922210EF";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -43406,7 +43407,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -43480,8 +43481,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group10" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8";
 	rename -uid "FAB0B6BD-4A3E-3D33-0D4D-75B7A8B05104";
 	setAttr ".t" -type "double3" -1.0079126279331523 0 -0.98622362656292639 ;
@@ -43547,7 +43548,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -43621,8 +43622,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__group";
 	rename -uid "15741191-48FE-FA86-677D-B98A1CEC490B";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -43658,7 +43659,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -43732,8 +43733,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "739FB7D0-496C-8538-477B-33A3194D4E9C";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -43828,7 +43829,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -43902,8 +43903,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group11|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__pasted__group";
 	rename -uid "EF09C462-467B-3D87-7D3E-DEACBFEF9DCF";
 	setAttr ".t" -type "double3" 1.9127301131956302 6.7435267553287339 0.91319252017723695 ;
@@ -43939,7 +43940,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -44013,8 +44014,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group11|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "512AFBE7-4C7A-FBFD-32C3-769F534A5A68";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -44107,7 +44108,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -44181,8 +44182,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group13" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8";
 	rename -uid "1C9C690E-41DA-5A98-5BFA-4E8A658CD7F0";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8074384364062643 ;
@@ -44259,7 +44260,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -44333,8 +44334,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group18" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8";
 	rename -uid "E2425B1C-4574-636B-AE7A-23BA36D77087";
 	setAttr ".t" -type "double3" 2.7904101266812873 0 -8.6571134146769513 ;
@@ -44395,7 +44396,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -44469,8 +44470,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8";
 	rename -uid "8489EB6D-44F7-8691-4136-AF874FDECFE2";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -44527,7 +44528,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -44601,8 +44602,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group12" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8";
 	rename -uid "616C843F-4DF5-B1FE-C647-76AE6AF033F2";
 	setAttr ".t" -type "double3" 2.7904101266812704 0 2.8437096371336188 ;
@@ -44659,7 +44660,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -44733,8 +44734,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group12|pasted__pasted__pasted__pasted__group8";
 	rename -uid "91116EEE-4E63-F5F1-B165-0AAAC9708F23";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -44775,7 +44776,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -44849,8 +44850,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group12|pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__group";
 	rename -uid "94CB2A1C-4280-0B59-94A2-3E9AA661967B";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -44886,7 +44887,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -44960,8 +44961,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group12|pasted__pasted__pasted__pasted__group8";
 	rename -uid "52D6D0AE-499A-975F-0F0C-89AFE8C9E266";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -45019,7 +45020,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -45093,8 +45094,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group10" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8";
 	rename -uid "122573DE-48F5-8C3E-A091-0CA6FBA6EB3B";
 	setAttr ".t" -type "double3" -1.0079126279331523 0 -0.98622362656292639 ;
@@ -45163,7 +45164,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -45237,8 +45238,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__pasted__group";
 	rename -uid "391E8C97-434C-B07A-58D2-19866D0587BE";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -45274,7 +45275,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -45348,8 +45349,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "5522E9C4-4BF1-364B-2AE1-0097F5674A24";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -45447,7 +45448,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -45521,8 +45522,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pasted__group9" 
 		-p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group11|pasted__pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "B15EC025-4B67-1C6F-CEDA-72AED8ADF834";
@@ -45617,7 +45618,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -45691,8 +45692,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group13" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8";
 	rename -uid "9D3F06DD-4702-F4B3-1816-D086AB3A2C35";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8074384364062643 ;
@@ -45819,7 +45820,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -45893,8 +45894,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group16" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8";
 	rename -uid "0C4E4A78-4D59-18A1-2437-4F8FA444FAA8";
 	setAttr ".t" -type "double3" 6.5889847830805728 0 -0.98622362656291529 ;
@@ -45986,7 +45987,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -46060,8 +46061,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group17" -p "|floor|group25|pasted__group8|pasted__group21|pasted__pasted__group8";
 	rename -uid "4E501F5E-4AEC-F92A-DC02-0E8F9261E342";
 	setAttr ".t" -type "double3" 6.5818902378640702 0 -0.98622362656291529 ;
@@ -46153,7 +46154,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -46227,8 +46228,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group19" -p "|floor|group25|pasted__group8";
 	rename -uid "18AD4973-4C2B-9901-CA4E-04B2F9FDDF77";
 	setAttr ".t" -type "double3" 10.393172705441453 0 -0.98622362656290974 ;
@@ -46283,7 +46284,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -46357,8 +46358,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8";
 	rename -uid "45EFFED8-4F92-EE13-DA89-BE8C6FE4300B";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -46399,7 +46400,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -46473,8 +46474,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group";
 	rename -uid "150D17AB-486A-5C50-73EE-92AC69DA4388";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -46510,7 +46511,7 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group25|pasted__grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -46584,8 +46585,8 @@ createNode mesh -n "pasted__pasted__pCubeShape4" -p "|floor|group25|pasted__grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8";
 	rename -uid "01143C5B-4974-768F-ECC7-CD9C37A1BA1F";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -46640,7 +46641,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -46714,8 +46715,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group12" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8";
 	rename -uid "B80531F6-4218-9EF1-6855-47BFEDA89265";
 	setAttr ".t" -type "double3" 2.7904101266812704 0 2.8437096371336188 ;
@@ -46770,7 +46771,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -46844,8 +46845,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group12|pasted__pasted__pasted__group8";
 	rename -uid "A5DCBBA2-4F45-B2F4-2F2F-E6B33FD85E05";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -46886,7 +46887,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -46960,8 +46961,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group12|pasted__pasted__pasted__group8|pasted__pasted__pasted__group";
 	rename -uid "67251F57-48C9-F6E4-8EE8-62A44A87BD46";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -46997,7 +46998,7 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -47071,8 +47072,8 @@ createNode mesh -n "pasted__pasted__pasted__pCubeShape4" -p "|floor|group25|past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group12|pasted__pasted__pasted__group8";
 	rename -uid "C6A3BD17-482F-46BF-EDD3-68BE6592F308";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -47129,7 +47130,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -47203,8 +47204,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group10" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8";
 	rename -uid "5AEC04EA-45B3-A321-DF05-0C8FF7E387CC";
 	setAttr ".t" -type "double3" -1.0079126279331523 0 -0.98622362656292639 ;
@@ -47266,7 +47267,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -47340,8 +47341,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "D28D5A63-4220-8FF4-0CB1-CBB51C9AA1CB";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -47382,7 +47383,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -47456,8 +47457,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__group";
 	rename -uid "F77450D7-4D1A-E065-2424-4896513459B5";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -47493,7 +47494,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -47567,8 +47568,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group10|pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__group8";
 	rename -uid "F03750C5-4209-8D8C-F034-27A2188F99F4";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -47626,7 +47627,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -47700,8 +47701,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group11" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8";
 	rename -uid "16711101-494A-7457-89E8-9EAE9D11A66F";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8112138435583578 ;
@@ -47769,7 +47770,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -47843,8 +47844,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group11|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "4FAD75D5-49FE-907E-E65C-11AA59668B93";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -47887,7 +47888,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -47961,8 +47962,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group11|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__pasted__group";
 	rename -uid "A7D258E1-495F-4ADB-63EF-88AB9E645A4C";
 	setAttr ".t" -type "double3" 1.9127301131956302 6.7435267553287339 0.91319252017723695 ;
@@ -47998,7 +47999,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -48072,8 +48073,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group11|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "70DD3B4B-47B6-00C0-647A-3CA287016470";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -48132,7 +48133,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -48206,8 +48207,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group14" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8";
 	rename -uid "A0C44E23-4193-A08A-DC89-F0B7FE35DE04";
 	setAttr ".t" -type "double3" 2.7904101266812735 0 0.87712300896512085 ;
@@ -48278,7 +48279,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -48352,8 +48353,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group13" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8";
 	rename -uid "0184C4CB-45EE-24B2-C34E-DBB304554547";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8074384364062643 ;
@@ -48430,7 +48431,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -48504,8 +48505,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group18" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8";
 	rename -uid "630FD060-41A5-F387-C2E1-7D8C3E5FCDA9";
 	setAttr ".t" -type "double3" 2.7904101266812873 0 -8.6571134146769513 ;
@@ -48566,7 +48567,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -48640,8 +48641,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8";
 	rename -uid "28D9D3FB-488C-B879-9A22-6DA81DCC9DFE";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -48698,7 +48699,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -48772,8 +48773,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group12" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8";
 	rename -uid "F6AA9F55-4FAB-E079-2747-FF98EB14DCE7";
 	setAttr ".t" -type "double3" 2.7904101266812704 0 2.8437096371336188 ;
@@ -48830,7 +48831,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -48904,8 +48905,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group12|pasted__pasted__pasted__pasted__group8";
 	rename -uid "2F4FAB40-42AF-2397-602D-F385DDF5BE3F";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -48946,7 +48947,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -49020,8 +49021,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group12|pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__group";
 	rename -uid "3AD73A56-404D-C3FA-0DBD-4B812A647235";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -49057,7 +49058,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -49131,8 +49132,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pCubeShape4" -p "|floor|grou
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group12|pasted__pasted__pasted__pasted__group8";
 	rename -uid "90950F3F-40EE-3AD9-D903-DBB0EE007BB9";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -49190,7 +49191,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -49264,8 +49265,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group10" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8";
 	rename -uid "C63843FF-4F11-CB9A-022A-0CB8A9849055";
 	setAttr ".t" -type "double3" -1.0079126279331523 0 -0.98622362656292639 ;
@@ -49328,7 +49329,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -49402,8 +49403,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "785BFC26-40E3-08DB-FFA5-3C82885B8D61";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -49446,7 +49447,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -49520,8 +49521,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__pasted__group";
 	rename -uid "99DF8255-47BC-BB5A-4AFD-62ACC23533F6";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -49557,7 +49558,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -49631,8 +49632,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "38ECEB5E-4AE0-C4C2-CBE4-CEB20C420F5B";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -49691,7 +49692,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -49765,8 +49766,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group11" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8";
 	rename -uid "46C636B5-4297-5097-93F6-CFAC71E38EDF";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8112138435583578 ;
@@ -49842,7 +49843,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -49916,8 +49917,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pasted__group9" 
 		-p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8|pasted__pasted__pasted__group11|pasted__pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "D85BE1E9-4504-E306-2B0E-1F9EC268D6A2";
@@ -49977,7 +49978,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -50051,8 +50052,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group14" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8";
 	rename -uid "75309669-4597-1EAA-5D69-7DBF2A6A4432";
 	setAttr ".t" -type "double3" 2.7904101266812735 0 0.87712300896512085 ;
@@ -50124,7 +50125,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -50198,8 +50199,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group13" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8|pasted__pasted__group18|pasted__pasted__pasted__group8";
 	rename -uid "5FE4B91A-49E0-8925-98EB-509FD7C7DA21";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8074384364062643 ;
@@ -50326,7 +50327,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -50400,8 +50401,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group16" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8";
 	rename -uid "44682628-40FF-C486-91E0-30AB92DD68AA";
 	setAttr ".t" -type "double3" 6.5889847830805728 0 -0.98622362656291529 ;
@@ -50493,7 +50494,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -50567,8 +50568,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__group17" -p "|floor|group25|pasted__group8|pasted__group19|pasted__pasted__group8";
 	rename -uid "C1A95724-4E56-468A-3829-87AD1901E5C2";
 	setAttr ".t" -type "double3" 6.5818902378640702 0 -0.98622362656291529 ;
@@ -50660,7 +50661,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -50734,8 +50735,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__group20" -p "|floor|group25|pasted__group8";
 	rename -uid "4ECED01E-4599-FB7C-0DE9-60A74C19B6D7";
 	setAttr ".t" -type "double3" 10.407451302467241 0 -0.98622362656290974 ;
@@ -50795,7 +50796,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -50869,8 +50870,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8";
 	rename -uid "2C939E17-4784-1536-4771-ADBC793E9768";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -50933,7 +50934,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -51007,8 +51008,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group12" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8";
 	rename -uid "86C88FEE-48A7-D1A4-14D4-628658970305";
 	setAttr ".t" -type "double3" 2.7904101266812704 0 2.8437096371336188 ;
@@ -51065,7 +51066,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -51139,8 +51140,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group12|pasted__pasted__pasted__pasted__group8";
 	rename -uid "0B6902A6-4B83-ED53-8703-0A991A6FEDCE";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -51204,7 +51205,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -51278,8 +51279,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group10" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8";
 	rename -uid "1DCC71AF-4C16-AB83-A425-228C5025C961";
 	setAttr ".t" -type "double3" -1.0079126279331523 0 -0.98622362656292639 ;
@@ -51342,7 +51343,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -51416,8 +51417,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "4C01EE81-4C79-AED3-146E-EEA5CA80A884";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -51460,7 +51461,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -51534,8 +51535,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pCube4" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__pasted__group";
 	rename -uid "7C5F38B3-4377-C7A2-C342-74967F776EFF";
 	setAttr ".t" -type "double3" 1.8889372761259171 6.7435267553287339 0.91319252017723818 ;
@@ -51571,7 +51572,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -51645,8 +51646,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group9" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "4B35BEA9-48B8-3735-7488-50BD0983555E";
 	setAttr ".t" -type "double3" 0.89707704640983232 0 -1.8826862442860275 ;
@@ -51705,7 +51706,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -51779,8 +51780,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group11" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8";
 	rename -uid "6D688555-4E8F-C107-9571-D29013D117DE";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8112138435583578 ;
@@ -51849,7 +51850,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -51923,8 +51924,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pasted__group" -p
 		 "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group11|pasted__pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "7D984761-481C-EFDE-DE3F-91881DB2482C";
@@ -51968,7 +51969,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -52042,8 +52043,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pasted__pCube4" 
 		-p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group11|pasted__pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__pasted__pasted__group";
 	rename -uid "0CCED1FD-451A-5EF2-8EB3-7093FDE0F025";
@@ -52081,7 +52082,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -52155,8 +52156,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pasted__group9" 
 		-p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group11|pasted__pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "A50CFB59-43D6-3E39-457B-DEA4D8938CC1";
@@ -52216,7 +52217,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -52290,8 +52291,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group14" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8";
 	rename -uid "9F1B4349-43D4-7CAF-D1AF-0090F2180472";
 	setAttr ".t" -type "double3" 2.7904101266812735 0 0.87712300896512085 ;
@@ -52363,7 +52364,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -52437,8 +52438,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group13" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8";
 	rename -uid "A08EB036-4B07-3936-6164-41BF3215864A";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8074384364062643 ;
@@ -52516,7 +52517,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -52590,8 +52591,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__group18" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8";
 	rename -uid "FE609C66-496B-A58A-7140-8B8EF3656DBF";
 	setAttr ".t" -type "double3" 2.7904101266812873 0 -8.6571134146769513 ;
@@ -52750,8 +52751,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 	setAttr ".bw" 3;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group12" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group18|pasted__pasted__pasted__pasted__group8";
 	rename -uid "35A28FCF-4119-BA3A-DDA7-B2833781F9D7";
 	setAttr ".t" -type "double3" 2.7904101266812704 0 2.8437096371336188 ;
@@ -52809,7 +52809,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -52883,8 +52883,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__group" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group18|pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__group12|pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "4CC55DC5-4BA7-65D7-4741-009270C3700E";
 	setAttr ".t" -type "double3" 1.8885135840015677 0 0.90271364956299538 ;
@@ -52949,7 +52949,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -53023,8 +53023,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 2;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group10" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group18|pasted__pasted__pasted__pasted__group8";
 	rename -uid "72881445-421B-65BB-6F3A-F9B76A34D620";
 	setAttr ".t" -type "double3" -1.0079126279331523 0 -0.98622362656292639 ;
@@ -53088,7 +53088,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -53162,8 +53162,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pasted__group" -p
 		 "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group18|pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "A0F911A3-4342-541E-77EB-F9BCE239551F";
@@ -53207,7 +53207,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -53281,8 +53281,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__pCub
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pasted__pCube4" 
 		-p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group18|pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__pasted__pasted__group";
 	rename -uid "CABFA582-4EA9-3CE7-457B-AEB0FB7ACEA2";
@@ -53320,7 +53320,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -53394,8 +53394,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pCubeShape4"
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pasted__group9" 
 		-p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group18|pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "09995CB9-431B-3071-9E97-C69D4B7496A6";
@@ -53455,7 +53455,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -53529,8 +53529,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group11" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group18|pasted__pasted__pasted__pasted__group8";
 	rename -uid "68A47A91-4136-D946-AED6-0398FB61BBA7";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8112138435583578 ;
@@ -53607,7 +53607,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -53681,8 +53681,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__group9" 
 		-p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group18|pasted__pasted__pasted__pasted__group8|pasted__pasted__pasted__pasted__group11|pasted__pasted__pasted__pasted__pasted__group10|pasted__pasted__pasted__pasted__pasted__pasted__group|pasted__pasted__pasted__pasted__pasted__pasted__pasted__group8";
 	rename -uid "52CC413C-447F-6BAE-42A6-52A56AB46E2C";
@@ -53742,7 +53742,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -53816,8 +53816,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group14" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group18|pasted__pasted__pasted__pasted__group8";
 	rename -uid "4BFCBEE9-4CC7-92A0-7AA2-269E2878CFB8";
 	setAttr ".t" -type "double3" 2.7904101266812735 0 0.87712300896512085 ;
@@ -53890,7 +53890,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -53964,8 +53964,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "pasted__pasted__pasted__pasted__group13" -p "|floor|group25|pasted__group8|pasted__group20|pasted__pasted__group19|pasted__pasted__pasted__group8|pasted__pasted__pasted__group18|pasted__pasted__pasted__pasted__group8";
 	rename -uid "6009E6EF-490E-9159-2D12-C8BEE215B839";
 	setAttr ".t" -type "double3" 2.790410126681282 0 -4.8074384364062643 ;
@@ -54299,7 +54299,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -54373,8 +54373,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "group23" -p "floor";
 	rename -uid "CD1AFDBB-42B7-0BC6-7F58-268D578FAEF6";
 	setAttr ".t" -type "double3" -4.8210319496927578 0 -0.98622362656293194 ;
@@ -54507,7 +54507,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -54581,7 +54581,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "group24" -p "floor";
 	rename -uid "D34A442D-443E-A6B2-42F3-64A4F023CA5D";
 	setAttr ".t" -type "double3" -4.8303261329410105 0 -0.98622362656293194 ;
@@ -54721,7 +54722,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -54795,8 +54796,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pasted__pasted__past
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "group32" -p "floor";
 	rename -uid "357722FE-41A9-385A-FA90-17BDC78637E6";
 	setAttr ".t" -type "double3" 3.3438745931621794 6.1311716276779356 -13.757967664131844 ;
@@ -54882,7 +54883,7 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 		 0.372794 0.012498856 0.37279397 0.2375021 0.127206 0.2375021 0.62421358 0 0.62720597
 		 0.2375021 0.625 0.497794;
 	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".dcc" -type "string" "Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 	setAttr -s 24 ".vt[0:23]"  -0.49685439 -0.5 0.49117601 -0.49685439 -0.45000458 0.5
@@ -54956,8 +54957,8 @@ createNode mesh -n "pasted__pasted__pasted__pasted__pasted__pCubeShape4" -p "|fl
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 2;
-	setAttr ".dsm" 1;
+	setAttr ".bw" 3;
+	setAttr ".dr" 1;
 createNode transform -n "group";
 	rename -uid "175549BE-45EE-7EA2-4AAC-9390E9B59536";
 	setAttr ".t" -type "double3" 0 0 -3.2295787507486402 ;
@@ -55717,14 +55718,14 @@ createNode mesh -n "pasted__pCubeShape5" -p "pasted__pCube5";
 createNode transform -n "bottom";
 	rename -uid "9CFF67CD-474B-3EAA-6E43-9D9FD4949837";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 438.64911075384248 158.08986696222547 187.22033894993257 ;
-	setAttr ".r" -type "double3" -17.999999999995929 67.199999999984527 0 ;
+	setAttr ".t" -type "double3" 223.58082849548362 58.04492588268959 262.25744098615928 ;
+	setAttr ".r" -type "double3" -9.0000000000002256 40.399999999984864 5.2206084874288673e-16 ;
 createNode camera -n "bottomShape" -p "bottom";
 	rename -uid "8C9C655B-4E36-9400-62EA-22BA05850527";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".fl" 914.95462891310979;
-	setAttr ".coi" 494.23455697648535;
+	setAttr ".coi" 338.12715859254257;
 	setAttr ".ow" 39.350147933312599;
 	setAttr ".imn" -type "string" "bottom1";
 	setAttr ".den" -type "string" "bottom1_depth";
@@ -55993,9 +55994,6 @@ createNode groupId -n "groupId151";
 createNode groupId -n "groupId152";
 	rename -uid "89231CC3-4516-2AB3-EB3F-B1A40D19F0D9";
 	setAttr ".ihi" 0;
-createNode groupId -n "groupId153";
-	rename -uid "B4BBD348-4252-9191-45AF-B3A5186E5611";
-	setAttr ".ihi" 0;
 createNode groupId -n "groupId154";
 	rename -uid "D6ACFD9B-4C2C-E03B-0E76-D1BA76A77523";
 	setAttr ".ihi" 0;
@@ -56126,6 +56124,9 @@ createNode groupId -n "groupId178";
 	setAttr ".ihi" 0;
 createNode groupId -n "groupId139";
 	rename -uid "8BC92FAE-40B7-3072-5621-A686C2BFF7D3";
+	setAttr ".ihi" 0;
+createNode groupId -n "groupId153";
+	rename -uid "B4BBD348-4252-9191-45AF-B3A5186E5611";
 	setAttr ".ihi" 0;
 select -ne :time1;
 	setAttr ".o" 1;
