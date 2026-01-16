@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: tw-Room-1-15-26.ma
-//Last modified: Thu, Jan 15, 2026 09:33:31 PM
+//Last modified: Thu, Jan 15, 2026 09:34:47 PM
 //Codeset: 1252
 requires maya "2026";
 requires -nodeType "materialxStack" -nodeType "MaterialXSurfaceShader" -dataType "MxDocumentStackData"
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "BAFA4029-42B7-60A4-75FB-6EB67C2FF2CB";
+fileInfo "UUID" "5BF3F215-43A9-8688-661E-6CA6E911F2E8";
 createNode transform -s -n "persp";
 	rename -uid "C542D65D-4022-C651-DB9A-E2814B21E313";
 	setAttr ".v" no;
@@ -55689,14 +55689,14 @@ createNode mesh -n "pasted__pCubeShape5" -p "pasted__pCube5";
 createNode transform -n "bottom";
 	rename -uid "9CFF67CD-474B-3EAA-6E43-9D9FD4949837";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 730.91520800629951 296.50599323246945 628.72945062237784 ;
+	setAttr ".t" -type "double3" 590.04749312030526 239.90425040269508 508.95723919884659 ;
 	setAttr ".r" -type "double3" -16.800000000000598 49.200000000000493 0 ;
 createNode camera -n "bottomShape" -p "bottom";
 	rename -uid "8C9C655B-4E36-9400-62EA-22BA05850527";
 	setAttr -k off ".v";
 	setAttr ".rnd" no;
 	setAttr ".fl" 914.95462891310979;
-	setAttr ".coi" 1000.1000001872768;
+	setAttr ".coi" 806.73403311792299;
 	setAttr ".ow" 39.350147933312599;
 	setAttr ".imn" -type "string" "bottom1";
 	setAttr ".den" -type "string" "bottom1_depth";
