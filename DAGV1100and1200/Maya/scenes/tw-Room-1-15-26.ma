@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: tw-Room-1-15-26.ma
-//Last modified: Thu, Jan 22, 2026 02:25:32 PM
+//Last modified: Thu, Jan 22, 2026 02:27:03 PM
 //Codeset: 1252
 requires maya "2026";
 requires -nodeType "materialxStack" -nodeType "MaterialXSurfaceShader" -dataType "MxDocumentStackData"
@@ -13,12 +13,12 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "611AB43B-4775-9413-B86F-139639A1D3D9";
+fileInfo "UUID" "80097782-4506-5BB3-7625-C8A448A01218";
 createNode transform -s -n "persp";
 	rename -uid "C542D65D-4022-C651-DB9A-E2814B21E313";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 26.110800666795726 8.8215354589125425 18.931355954018191 ;
-	setAttr ".r" -type "double3" 351.59999999877016 52.800000000000082 -6.5757511946314901e-16 ;
+	setAttr ".t" -type "double3" 24.144444646184969 8.3866933544244144 21.347421170479649 ;
+	setAttr ".r" -type "double3" 352.79999999876947 47.60000000000035 0 ;
 	setAttr ".rpt" -type "double3" 2.3876490270610437e-16 1.9247586150849658e-16 -6.4147205044717939e-18 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "DAAB8FA9-4F7D-2076-F285-D89B9EF80F86";
@@ -56421,7 +56421,7 @@ createNode mesh -n "polySurfaceShape65" -p "polySurface60";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "polySurface62";
 	rename -uid "FBB0261A-43F6-4C6A-55F9-CD877960C818";
-	setAttr ".t" -type "double3" -0.32024717610685727 0 -0.43944305591427923 ;
+	setAttr ".t" -type "double3" -0.45118571318306877 0 -0.43944305591427923 ;
 	setAttr ".rp" -type "double3" -11.462253941175568 6.6417617315783497 0.40666076634304649 ;
 	setAttr ".sp" -type "double3" -11.462253941175568 6.6417617315783497 0.40666076634304649 ;
 createNode mesh -n "polySurfaceShape68" -p "polySurface62";
