@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Gas Station.ma
-//Last modified: Fri, Apr 10, 2026 04:43:36 PM
+//Last modified: Fri, Apr 10, 2026 05:07:18 PM
 //Codeset: 1252
 file -rdi 1 -ns "Shelf_short" -rfn "Shelf_shortRN" -op "v=0;" -typ "mayaAscii"
 		 "D:/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Shelf short.ma";
@@ -28,18 +28,18 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202510291147-60ec9eda33";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "04188EF1-4C92-5598-FE90-D9AE0F59F321";
+fileInfo "UUID" "4450D71D-436F-D9B3-91E1-EB86C74A9F14";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "DD895FEC-4F5A-233C-1A44-C2B8D9967F17";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -8.3152150945679253 4.688760646121632 -6.8556071447554077 ;
-	setAttr ".r" -type "double3" 341.66164730032921 -945.40000000034786 0 ;
+	setAttr ".t" -type "double3" -8.3274356698425631 4.4715991887411635 -6.9882790691599892 ;
+	setAttr ".r" -type "double3" 348.26164730032582 -940.60000000034006 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "388DAAC4-42D9-2D75-2210-A1A6A010EE3F";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 4.7195875700643413;
+	setAttr ".coi" 4.7195875700644878;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
